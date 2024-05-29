@@ -11,15 +11,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-zinc-950">
     <div id="main" class="bg-zinc-950">
-      <nav class="text-white flex justify-between items-center px-10 py-4">
+      <nav class="w-full text-white flex justify-between items-center px-10 py-4 border-b fixed z-20">
         <div class="logo w-1/8">
           <h1 class="font-bold text-2xl text-blue-600">SHARMA</h1>
           <p class="text-right -mt-2 text-light">ELECTRIC</p>
         </div>
         <div class="linkicon flex items-center">
-          <div class="link flex list-none gap-6">
+          <div class="link flex list-none gap-6 font-semibold">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Services</a></li>
@@ -31,7 +31,31 @@
           </div>
         </div>
       </nav>
-      <section class="homePAge"></section>
+      <section class="homePage w-full h-screen">
+        <div class="back w-full h-screen absolute top-0 -z-1">
+          <img src="./images/home.jpg" alt="" />
+        </div>
+        <div class="home w-full h-screen relative flex items-center">
+          <div class="content mt-20 w-1/2">
+            <h1><span class="text-yellow-600">Lighting</span> Your World,</h1>
+            <h1>Safely & Efficiently</h1>
+            <p class="text-zinc-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, est. Sit obcaecati quod quos ducimus repellat.</p>
+            <button class="mt-5 border text-white px-7 py-3 rounded-lg">Get Started</button>
+          </div>
+        </div>
+      </section>
+      <section class="aboutPage relative z-10 w-full border px-12 py-16 flex">
+        <div class="aboutimg w-1/2">
+          <img src="./images/about.jpg" class="rounded-s-lg border-s-white" alt="">
+        </div>
+        <div class="content w-1/2">
+          <h1 class="text-4xl text-white font-bold ms-8 mb-8">About <span class="text-yellow-600">Us</span></h1>
+          <p class="text-zinc-300 ms-8 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cupiditate mollitia dignissimos sunt ullam magnam vitae maxime possimus, voluptates ex et fugit dicta, inventore culpa officia veniam voluptatum. Velit quasi dolorum iste quidem eligendi hic, perspiciatis at voluptatem exercitationem nulla?</p>
+          <p class="text-zinc-300 ms-8 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quia laudantium expedita tempora suscipit excepturi reiciendis alias minus animi sit non veritatis nemo aspernatur provident, magnam quas neque libero beatae voluptatibus? Doloribus, reiciendis fugit?</p>
+          <p class="text-zinc-300 ms-8 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facere velit modi, iusto nobis enim atque molestias fuga, rem, magnam incidunt omnis? Ad culpa veritatis cupiditate repellat facilis nesciunt eligendi molestiae incidunt architecto odit, adipisci reiciendis velit et omnis minima magni. Fuga, consequatur vero? Iusto, quibusdam.</p>
+          <button class="border ms-8 mt-8 px-8 py-3 text-white rounded-lg">Read more...</button>
+        </div>
+      </section>
     </div>
   </body>
 </html>
