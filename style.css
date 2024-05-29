@@ -61,6 +61,19 @@ nav {
     border-radius: 10px;
     margin-top: 20px;
   }
+.service{
+    display: flex;
+    /* padding: 20px 20px 0 20px; */
+    flex-direction: column;
+}
+.service h1{
+    width: 100%;
+    padding-left: 15px;
+}
+.service p{
+    width: 100%;
+    padding: 15px;
+}
 }
 @media (min-width: 780px) {
   nav .link {
