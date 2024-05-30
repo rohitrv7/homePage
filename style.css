@@ -35,6 +35,12 @@ swiper-slide {
   justify-content: center;
   align-items: center;
 }
+.testimonial swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
 
 swiper-slide img {
   display: block;
@@ -52,17 +58,30 @@ swiper-slide img {
   font-weight: 800;
   color: #fff;
 }
+.card{
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
 
 /* .aboutPage {
   background-color: #fff;
 } */
 
-
+.testimonial swiper-slide img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
 
 @media (max-width: 780px) {
   .homePage {
     width: 100%;
     max-height: 700px;
+  }
+  .home h1 {
+    font-size: 6vw;
+    font-weight: 800;
+    color: #fff;
   }
   nav .link {
     border: 2px solid blue;
@@ -73,6 +92,7 @@ swiper-slide img {
   }
   .home .content {
     width: 100%;
+    margin-top: -50px;
   }
   .aboutPage {
     display: flex;
@@ -94,7 +114,7 @@ swiper-slide img {
   }
   .service {
     display: flex;
-    padding: 20px 20px 0 20px;
+    padding: 20px 0 0 0;
     flex-direction: column;
   }
   .service h1 {
@@ -105,10 +125,15 @@ swiper-slide img {
     width: 100%;
     padding: 15px;
   }
-  .servicePage{
-    padding: 10px 20px 0 20px ;
+  .servicePage {
+    padding: 10px 20px 0 20px;
   }
-  .cards {
+  .servicePage .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .whyPage .cards {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
