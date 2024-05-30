@@ -58,8 +58,20 @@ swiper-slide img {
   font-weight: 800;
   color: #fff;
 }
-.card {
+.whyPage .card {
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.aboutPage{
+  padding: 64px 48px 40px 48px;
+}
+.servicePage{
+  padding: 48px 48px;
+}
+.whyPage{
+  padding: 48px 48px;
+}
+.testiPage{
+  padding: 48px;
 }
 
 .testimonial swiper-slide img {
@@ -143,15 +155,14 @@ swiper-slide img {
   nav {
     padding: 0;
   }
-  .aboutPage {
-    padding: 0px;
-  }
   .aboutPage h1 {
     margin-left: 0px;
   }
   .aboutPage .content {
     margin-left: 0px;
-    text-align: justify;
+  }
+  .aboutPage .content button{
+    margin-left: 0px;
   }
   footer .footerlink {
     width: 100%;
@@ -160,7 +171,7 @@ swiper-slide img {
   }
   footer {
     display: flex;
-    /* background-color: red; */
+    background-color: red;
     flex-direction: column;
   }
   .servicePage .cards {
@@ -174,6 +185,18 @@ swiper-slide img {
     display: grid;
     /* background: blue; */
     grid-template-columns: 1fr;
+  }
+  .testiPage{
+    padding: 48px 20px;
+  }
+  .servicePage{
+    padding: 30px 20px;
+  }
+  .aboutPage{
+    padding: 64px 20px 40px 20px;
+  }
+  .whyPage{
+    padding: 48px 20px;
   }
 }
 
