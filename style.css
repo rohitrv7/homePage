@@ -21,6 +21,27 @@ nav {
   object-fit: cover;
   object-position: top;
 }
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .homePage .home {
   padding: 50px;
   background: #ffffff;
@@ -31,6 +52,12 @@ nav {
   font-weight: 800;
   color: #fff;
 }
+
+/* .aboutPage {
+  background-color: #fff;
+} */
+
+
 
 @media (max-width: 780px) {
   .homePage {
@@ -47,33 +74,45 @@ nav {
   .home .content {
     width: 100%;
   }
-  .aboutPage{
+  .aboutPage {
     display: flex;
     flex-direction: column;
     border: none;
+    padding: 15px 8px;
   }
-  .aboutPage .aboutimg{
+  .aboutPage p {
+    margin: 0;
+  }
+  .aboutPage .aboutimg {
     width: 100%;
     border-radius: 10px;
   }
-  .aboutPage .content{
+  .aboutPage .content {
     width: 100%;
     border-radius: 10px;
     margin-top: 20px;
   }
-.service{
+  .service {
     display: flex;
-    /* padding: 20px 20px 0 20px; */
+    padding: 20px 20px 0 20px;
     flex-direction: column;
-}
-.service h1{
+  }
+  .service h1 {
     width: 100%;
     padding-left: 15px;
-}
-.service p{
+  }
+  .service p {
     width: 100%;
     padding: 15px;
-}
+  }
+  .servicePage{
+    padding: 10px 20px 0 20px ;
+  }
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (min-width: 780px) {
   nav .link {

@@ -13,10 +13,11 @@
   </head>
   <body class="bg-zinc-950">
     <div id="main" class="bg-zinc-950">
+
       <nav class="w-full text-white flex justify-between items-center px-10 py-4 border-b fixed z-20">
         <div class="logo w-1/8">
           <h1 class="font-bold text-2xl text-blue-600">SHARMA</h1>
-          <p class="text-right -mt-2 text-light">ELECTRIC</p>
+          <p class="text-right -mt-2 text-light text-xs">ELECTRIC</p>
         </div>
         <div class="linkicon flex items-center">
           <div class="link flex list-none gap-6 font-semibold">
@@ -31,11 +32,15 @@
           </div>
         </div>
       </nav>
+
       <section class="homePage w-full h-screen">
-        <div class="back w-full h-screen absolute top-0 -z-1">
-          <img src="./images/home.jpg" alt="" />
-        </div>
-        <div class="home w-full h-screen relative flex items-center">
+          <swiper-container class="mySwiper back w-full h-screen absolute top-0 -z-1" pagination="true" pagination-clickable="true" navigation="false" space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" loop="true" effect="fade">
+            <swiper-slide><img src="./images/home.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="./images/home2.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="./images/home3.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="./images/home4.jpg" alt=""></swiper-slide>
+          </swiper-container>
+        <div class="home w-full h-screen relative flex items-center z-10">
           <div class="content mt-20 w-1/2">
             <h1><span class="text-yellow-600">Lighting</span> Your World,</h1>
             <h1>Safely & Efficiently</h1>
@@ -44,6 +49,7 @@
           </div>
         </div>
       </section>
+
       <section class="aboutPage relative z-10 w-full border-t px-12 py-16 flex">
         <div class="aboutimg w-1/2">
           <img src="./images/about.jpg" class="rounded-s-lg border-s-white" alt="">
@@ -56,18 +62,84 @@
           <button class="border ms-8 mt-8 px-8 py-3 text-white rounded-lg">Read more...</button>
         </div>
       </section>
-      <section class="servicePage w-full border">
-        <div class="service w-full flex justify-between py-28 px-12">
+
+      <section class="servicePage w-full">
+        <div class="service w-full flex justify-between py-20 px-12">
           <h1 class="text-4xl text-white font-bold "><span class="text-yellow-600">Our </span>Services</h1>
           <p class="text-zinc-300 px-12 w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita suscipit tempora culpa distinctio numquam dignissimos. Facere nesciunt commodi impedit voluptatibus nobis dolore temporibus perspiciatis sit!</p>
         </div>
-        <div class="cards w-full flex gap-6 px-12">
-          <div class="card flex-shring-0 h-[300px] border w-1/4 rounded-lg"></div>
-          <div class="card flex-shring-0 h-[300px] border w-1/4 rounded-lg"></div>
-          <div class="card flex-shring-0 h-[300px] border w-1/4 rounded-lg"></div>
-          <div class="card flex-shring-0 h-[300px] border w-1/4 rounded-lg"></div>
+        <div class="cards w-full grid grid-cols-4 gap-6 px-12">
+          <div class="card border rounded-lg overflow-hidden">
+            <div class="imgcard w-full h-[200px]">
+              <img src="./images/service1.jpg" class="w-full h-full object-cover object-top" alt="">
+            </div>
+            <div class="contentcard px-5 py-6 relative flex flex-col justify-between">
+              <div>
+                <h1 class="text-white text-2xl font-semibold">Commercial <br> Solution</h1>
+              </div>
+              <div>
+                <a href="" class="text-white inline-block mt-8">Discover</a>
+              </div>
+            </div>
+          </div>
+          <div class="card border rounded-lg overflow-hidden">
+            <div class="imgcard w-full h-[200px]">
+              <img src="./images/service2.jpg" class="w-full h-full object-cover object-top" alt="">
+            </div>
+            <div class="contentcard px-5 py-6 relative flex flex-col justify-between">
+              <div>
+                <h1 class="text-white text-2xl font-semibold">Residantial <br> Electric Solution</h1>
+              </div>
+              <div>
+                <a href="" class="text-white inline-block mt-8">Discover</a>
+              </div>
+            </div>
+          </div>
+          <div class="card border rounded-lg overflow-hidden">
+            <div class="imgcard w-full h-[200px]">
+              <img src="./images/service.jpg" class="w-full h-full object-cover object-top" alt="">
+            </div>
+            <div class="contentcard px-5 py-6 relative flex flex-col justify-between">
+              <div>
+                <h1 class="text-white text-2xl font-semibold">Lighting <br> Solution</h1>
+              </div>
+              <div>
+                <a href="" class="text-white inline-block mt-8">Discover</a>
+              </div>
+            </div>
+          </div>
+          <div class="card border rounded-lg overflow-hidden">
+            <div class="imgcard w-full h-[200px]">
+              <img src="./images/service3.jpg" class="w-full h-full object-cover object-top" alt="">
+            </div>
+            <div class="contentcard px-5 py-6 relative flex flex-col justify-between">
+              <div>
+                <h1 class="text-white text-2xl font-semibold">Contractor <br> Electric Solution</h1>
+              </div>
+              <div>
+                <a href="" class="text-white inline-block mt-8">Discover</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section class="whyPage w-full">
+        <div class="service w-full flex justify-between py-20 px-12">
+          <h1 class="text-4xl text-white font-bold ">Why <span class="text-yellow-600">Choose </span>us</h1>
+          <p class="text-zinc-300 px-12 w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita suscipit tempora culpa distinctio numquam dignissimos. Facere nesciunt commodi impedit voluptatibus.</p>
+        </div>
+        <div class="cards w-full grid grid-cols-4 gap-6 px-12">
+          <div class="card border rounded-lg overflow-hidden"></div>
+          <div class="card border rounded-lg overflow-hidden"></div>
+          <div class="card border rounded-lg overflow-hidden"></div>
+          <div class="card border rounded-lg overflow-hidden"></div>
+        </div>
+        
+      </section>
+
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
