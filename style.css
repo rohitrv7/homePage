@@ -36,11 +36,11 @@ swiper-slide {
   align-items: center;
 }
 .testimonial swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
 
 swiper-slide img {
   display: block;
@@ -58,13 +58,9 @@ swiper-slide img {
   font-weight: 800;
   color: #fff;
 }
-.card{
+.card {
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
-
-/* .aboutPage {
-  background-color: #fff;
-} */
 
 .testimonial swiper-slide img {
   display: block;
@@ -72,19 +68,23 @@ swiper-slide img {
   height: 100px;
   border-radius: 50%;
 }
-@media (max-width: 980px){
-  footer{
+
+@media (max-width: 980px) {
+  footer {
     display: flex;
     flex-direction: column;
   }
-  footer .footerlink{
+  footer .footerlink {
     width: 100%;
   }
 }
+
+
+/* mobile */
 @media (max-width: 768px) {
   .homePage {
     width: 100%;
-    max-height: 700px;
+    max-height: 500px;
   }
   .home h1 {
     font-size: 6vw;
@@ -92,8 +92,10 @@ swiper-slide img {
     color: #fff;
   }
   nav .link {
-    border: 2px solid blue;
     display: none;
+  }
+  nav {
+    padding: 9px;
   }
   .icon {
     display: block;
@@ -120,70 +122,103 @@ swiper-slide img {
     border-radius: 10px;
     margin-top: 20px;
   }
+  .servicePage {
+    padding: 0;
+  }
   .service {
     display: flex;
-    padding: 20px 0 0 0;
+    /* background-color: red; */
+    padding: 0;
     flex-direction: column;
-  }
-  .service h1 {
-    width: 100%;
-    padding-left: 15px;
   }
   .service p {
     width: 100%;
-    padding: 15px;
+    /* border: 1px solid red; */
+    padding: 10px 0;
   }
-  .servicePage {
-    padding: 10px 20px 0 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  nav {
+    padding: 0;
+  }
+  .aboutPage {
+    padding: 0px;
+  }
+  .aboutPage h1 {
+    margin-left: 0px;
+  }
+  .aboutPage .content {
+    margin-left: 0px;
+    text-align: justify;
+  }
+  footer .footerlink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
   }
   .servicePage .cards {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* background: blue; */
+    grid-template-columns: 1fr;
   }
   .whyPage .cards {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  footer{
-    display: flex;
-    flex-direction: column;
+    /* background: blue; */
+    grid-template-columns: 1fr;
   }
 }
-@media (min-width: 780px) {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .servicePage .cards {
+    width: 100%;
+    display: grid;
+    /* background: red; */
+    grid-template-columns: 1fr 1fr;
+  }
+  .whyPage .cards {
+    /* background-color: red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   nav .link {
     display: flex;
   }
   .icon {
     display: none;
   }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  footer .footerlink{
+  .servicePage .cards {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* background: coral; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  footer{
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0px;
+  .whyPage .cards {
+    width: 100%;
+    display: grid;
+    /* background: coral; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+/* 
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+} */
