@@ -74,6 +74,9 @@ swiper-slide img {
 .testiPage{
   padding: 48px;
 }
+.testi{
+  padding: 40px;
+}
 
 .testimonial swiper-slide img {
   display: block;
@@ -238,6 +241,9 @@ swiper-slide img {
   }
   .whyPage{
     padding: 48px 20px;
+  }
+  .testi{
+    padding: 20px;
   }
   footer{
     padding: 48px 20px;
